@@ -220,6 +220,7 @@ h1 span {
     margin: 0 5rem;
     align-items: center;
     flex-direction: row;
+    gap: 5rem;
   }
   .botones {
     display: flex;

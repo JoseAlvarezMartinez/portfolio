@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
-import { AiOutlineUser } from "react-icons/ai";
-import MiFoto from "../assets/MiFoto.jpeg";
+
 const SobreMi = () => {
   const [edad, setEdad] = useState();
   useEffect(() => {
