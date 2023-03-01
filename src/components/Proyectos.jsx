@@ -6,15 +6,24 @@ const Proyectos = () => {
       <h2 className="titulo-h2">Proyectos</h2>
       <div className="proyectosContenedor">
         {proyectos.map((proyecto, i) => (
-          <div className="proyecto-card" key={i}>
-            <img
-              src={proyecto.img}
-              alt="Imagen del proyecto"
-              className="proyecto-img"
-            />
-            <p>{proyecto.nombre}</p>
-            <div className="centrar-btn">
-              <a href={`https://${proyecto.link}`} target="_blank">Ver Proyecto</a>
+          <div className="flip-card" key={i}>
+            <div className="flip-card-inner">
+              <div className="flip-card-front">
+                <img
+                  src={proyecto.img}
+                  alt="Avatar"
+                  style={{ width: "100%", height: "100%" }}
+                />
+              </div>
+              <div className="flip-card-back">
+                <h3>{proyecto.nombre}</h3>
+
+                <div className="centrar-btn">
+                  <a className="ver-proyecto" href={`https://${proyecto.link}`} target="_blank">
+                    Ver Proyecto
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         ))}
