@@ -38,7 +38,7 @@ const Header = () => {
 
         <div className="bienvenida-contenedor">
           <h1>
-            Hola! Soy <span>José Alvarez Martinez</span>Desarrollador Front End
+            H o l a ! S o y <span>José Alvarez Martinez</span>D e s a r r o l l a d o r &nbsp; F r o n t &nbsp; E n d
           </h1>
           <div className="centrar-boton">
             <a

@@ -54,8 +54,8 @@ h1 span {
 .contenedor-superior {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-
+  justify-content: space-between;
+  margin: 0 1.3rem;
   padding-top: 1rem;
 }
 .navegacion-inactiva {
@@ -120,6 +120,9 @@ h1 span {
   gap: 0.5rem;
   margin-top: 1rem;
 }
+.red-social-fondo:hover{
+  transform: scale(1.1);
+}
 .red-social-fondo {
   cursor: pointer;
   padding: 0.4rem;
@@ -127,6 +130,7 @@ h1 span {
   width: 2.5rem;
   border-radius: 50%;
   background-color: rgba(153, 0, 255, 1);
+  transition: transform 0.5s;
 }
 .tienda-online-arrow {
   animation: arrowanimation 0.55s infinite alternate ease-in-out;
