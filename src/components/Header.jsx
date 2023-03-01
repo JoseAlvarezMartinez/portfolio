@@ -12,26 +12,28 @@ const Header = () => {
           <h2 className="logo">José Alvarez</h2>
 
           <nav
-          className={`${isOpen ? "navegacion-activa" : "navegacion-inactiva"}`}
-        >
-          <ul className="navegacion--ul">
-            <li className="navegacion--li">
-              <a href="#">Inicio</a>
-            </li>
-            <li className="navegacion--li">
-              <a href="#">Sobre Mí</a>
-            </li>
-            <li className="navegacion--li">
-              <a href="#">Habilidades</a>
-            </li>
-            <li className="navegacion--li">
-              <a href="#">Proyectos</a>
-            </li>
-            <li className="navegacion--li">
-              <a href="#">Contacto</a>
-            </li>
-          </ul>
-        </nav>
+            className={`${
+              isOpen ? "navegacion-activa" : "navegacion-inactiva"
+            }`}
+          >
+            <ul className="navegacion--ul">
+              <li className="navegacion--li">
+                <a href="#">Inicio</a>
+              </li>
+              <li className="navegacion--li">
+                <a onClick={() => setOpen(false)} href="#sobre-mi">Sobre Mí</a>
+              </li>
+              <li className="navegacion--li">
+                <a href="#">Habilidades</a>
+              </li>
+              <li className="navegacion--li">
+                <a href="#">Proyectos</a>
+              </li>
+              <li className="navegacion--li">
+                <a href="#">Contacto</a>
+              </li>
+            </ul>
+          </nav>
         </div>
 
         <div className="bienvenida-contenedor">
