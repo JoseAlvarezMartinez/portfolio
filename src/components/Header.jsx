@@ -1,4 +1,6 @@
 import { Squash as Hamburger } from "hamburger-react";
+import { CiLinkedin } from "react-icons/ci";
+import { BsGithub } from "react-icons/bs";
 import { useState } from "react";
 const Header = () => {
   const [isOpen, setOpen] = useState(false);
@@ -35,7 +37,31 @@ const Header = () => {
             Hola! Soy <span>José Alvarez Martinez</span>Desarrollador Front End
           </h1>
           <div className="centrar-boton">
-            <a className="descargar-cv">Descargar Cv</a>
+            <a
+              target={"_blank"}
+              href="https://drive.google.com/file/d/1HhbV_plbRYvR8BhxZeJX4aeGwx1_xYY6/view?usp=sharing"
+              className="descargar-cv"
+            >
+              Descargar CV
+            </a>
+          </div>
+          <div className="redes-sociales">
+            <div className="red-social-fondo">
+              <a
+                target={"_blank"}
+                href="https://www.linkedin.com/in/jos%C3%A9-alvarez-martinez-621404211/"
+              >
+                <CiLinkedin color="#fff" size={"2.5rem"} />
+              </a>
+            </div>
+            <div className="red-social-fondo ">
+              <a
+                target={"_blank"}
+                href="https://github.com/JoseAlvarezMartinez"
+              >
+                <BsGithub color="#fff" size={"2.5rem"} />
+              </a>
+            </div>
           </div>
         </div>
         <div className="centrar-boton">
