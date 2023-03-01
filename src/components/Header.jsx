@@ -8,10 +8,10 @@ const Header = () => {
     <header>
       <div className="oscurecer-fondo">
         <div className="contenedor-superior">
-          <h2 className="logo">José Alvarez</h2>
           <Hamburger toggled={isOpen} color={"#fff"} toggle={setOpen} />
-        </div>
-        <nav
+          <h2 className="logo">José Alvarez</h2>
+
+          <nav
           className={`${isOpen ? "navegacion-activa" : "navegacion-inactiva"}`}
         >
           <ul className="navegacion--ul">
@@ -32,6 +32,8 @@ const Header = () => {
             </li>
           </ul>
         </nav>
+        </div>
+
         <div className="bienvenida-contenedor">
           <h1>
             Hola! Soy <span>José Alvarez Martinez</span>Desarrollador Front End
@@ -66,7 +68,7 @@ const Header = () => {
         </div>
         <div className="centrar-boton">
           <svg
-            className="tienda-online-arrow"
+            className={`tienda-online-arrow ${isOpen ? "z-1" : ""}`}
             width="14"
             height="16"
             viewBox="0 0 14 16"
