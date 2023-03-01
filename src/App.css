@@ -151,7 +151,6 @@ h1 span {
     opacity: 1;
   }
 }
-
 .titulo-h2 {
   text-align: center;
   font-weight: 400;
@@ -181,7 +180,6 @@ h1 span {
     background-color: #000000ce;
   }
 }
-
 .barra-fija {
   transition: all 0.8s;
   animation: animacionSticky 1s alternate ease-in-out;
@@ -190,9 +188,40 @@ h1 span {
   position: sticky;
   top: 0;
   z-index: 1;
-
 }
-
+.habilidades {
+  margin: 0 1.5rem;
+  font-size: 1.3rem;
+}
+.tecnologia-img {
+  width: 7rem;
+}
+.tecnologia-titulo{
+  text-align: center;
+  
+}
+.slides {
+  display: grid;
+  grid-auto-flow: column;
+  margin: 2rem;
+  overflow-y: auto;
+  overflow:scroll;
+  scrollbar-width: none;
+  overscroll-behavior-x: contain;
+}
+.slides div{
+  margin: 0 .5rem;
+}
+.slides img{
+  width: 8rem;
+  object-fit: contain;
+}
+.sass{
+  min-height: 7.78rem;
+}
+.next{
+  min-height: 8rem;
+}
 @media only screen and (min-width: 600px) {
   .hamburger-react {
     display: none;

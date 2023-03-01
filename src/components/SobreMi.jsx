@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-
+import { tecnologias } from "../data/data";
 const SobreMi = () => {
   const [edad, setEdad] = useState();
   useEffect(() => {
@@ -18,6 +18,18 @@ const SobreMi = () => {
         convertirme en un Desarrollador Full Stack para abarcar conocimientos
         tanto en el front-end como el back-end.
       </p>
+
+      <div>
+        <h3 className="habilidades">Habilidades</h3>
+        <div className="slides">
+          {tecnologias.map((tecnologia,i) => (
+            <div key={i}>
+              <img className={`tecnologia-img ${tecnologia.nombre == "Next.js" ? "next" : ""} ${tecnologia.nombre == "SASS" ? "sass" : ""}`} src={tecnologia.imagen} />
+              <p className="tecnologia-titulo">{tecnologia.nombre}</p>
+            </div>
+          ))}
+        </div>
+      </div>
     </section>
   );
 };
