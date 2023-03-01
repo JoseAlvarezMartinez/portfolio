@@ -55,8 +55,7 @@ h1 span {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: .5rem 2rem;
-
+  padding: 0.5rem 2rem;
 }
 .navegacion-inactiva {
   display: none;
@@ -139,6 +138,9 @@ h1 span {
 .z-1 {
   z-index: -1;
 }
+.avatar {
+  display: none;
+}
 @keyframes arrowanimation {
   0% {
     -webkit-transform: translateY(-2rem);
@@ -169,8 +171,8 @@ h1 span {
   justify-content: center;
 }
 
-.barra-fija{
-  transition: all .8s;
+.barra-fija {
+  transition: all 0.8s;
   position: sticky;
   top: 0;
   background-color: #000000ce;
@@ -206,7 +208,7 @@ h1 span {
   .contenedor-superior {
     flex-direction: row;
     transition: background-color 1.5s;
-    padding-bottom: 1rem;
+    padding: 1rem 2rem;
   }
   h1 {
     font-size: 1.5rem;
@@ -214,20 +216,39 @@ h1 span {
   h1 span {
     font-size: 2.5rem;
   }
-  .bienvenida-contenedor{
+  .bienvenida-contenedor {
     margin: 0 5rem;
-    align-items: start;
+    align-items: center;
+    flex-direction: row;
   }
-  .botones{
+  .botones {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 31rem;
   }
-  .redes-sociales{
+  .redes-sociales {
     margin: 0;
   }
-  .descargar-cv{
+  .descargar-cv {
     margin-right: 1rem;
+  }
+  .probando {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .avatar {
+    display: inline;
+    width: 19rem;
+    opacity: 0.8;
+  }
+  .avatar-div{
+
+    margin: 0 auto;
+  }
+  .presentacion-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
