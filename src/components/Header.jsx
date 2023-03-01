@@ -21,10 +21,9 @@ const Header = () => {
                 <a href="#">Inicio</a>
               </li>
               <li className="navegacion--li">
-                <a onClick={() => setOpen(false)} href="#sobre-mi">Sobre Mí</a>
-              </li>
-              <li className="navegacion--li">
-                <a href="#">Habilidades</a>
+                <a onClick={() => setOpen(false)} href="#sobre-mi">
+                  Sobre Mí
+                </a>
               </li>
               <li className="navegacion--li">
                 <a href="#">Proyectos</a>
@@ -38,7 +37,8 @@ const Header = () => {
 
         <div className="bienvenida-contenedor">
           <h1>
-            H o l a ! S o y <span>José Alvarez Martinez</span>D e s a r r o l l a d o r &nbsp; F r o n t &nbsp; E n d
+            H o l a ! S o y <span>José Alvarez Martinez</span>D e s a r r o l l
+            a d o r &nbsp; F r o n t &nbsp; E n d
           </h1>
           <div className="centrar-boton">
             <a

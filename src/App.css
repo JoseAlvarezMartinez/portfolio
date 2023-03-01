@@ -99,6 +99,7 @@ h1 span {
 
   height: 80vh;
 }
+
 .centrar-boton {
   display: flex;
   justify-content: center;
@@ -120,7 +121,7 @@ h1 span {
   gap: 0.5rem;
   margin-top: 1rem;
 }
-.red-social-fondo:hover{
+.red-social-fondo:hover {
   transform: scale(1.1);
 }
 .red-social-fondo {
@@ -166,4 +167,34 @@ h1 span {
 .centrar-foto {
   display: flex;
   justify-content: center;
+}
+@media only screen and (min-width: 600px) {
+  .hamburger-react {
+    display: none;
+  }
+  .contenedor-superior {
+    flex-direction: column;
+  }
+  .navegacion-inactiva {
+    display: flex;
+  }
+  .navegacion--ul {
+    position: relative;
+    background-color: transparent;
+
+    flex-direction: row;
+    height: 0;
+    width: 100%;
+  }
+  .navegacion--li {
+    margin: 0 1rem;
+  }
+  h1 span {
+    font-size: 2rem;
+  }
+}
+@media only screen and (min-width:900px){
+  .contenedor-superior{
+    flex-direction: row;
+  }
 }
