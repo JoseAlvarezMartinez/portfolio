@@ -5,22 +5,14 @@ import { useEffect, useState } from "react";
 import Avatar from "../assets/avatar.png";
 const Header = () => {
   const [isOpen, setOpen] = useState(false);
-  const [barraFija, setBarraFija] = useState(false);
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      if (window.scrollY >= 80) {
-        return setBarraFija(true);
-      }
-      setBarraFija(false);
-    });
-  }, [barraFija]);
+
   return (
     <header>
       <div className="oscurecer-fondo">
-        <div className={`contenedor-superior ${barraFija ? "barra-fija" : ""}`}>
+        <div className={`contenedor-superior `}>
           <Hamburger toggled={isOpen} color={"#fff"} toggle={setOpen} />
           <a href="#">
-          <h2 className="logo">José Alvarez</h2>
+            <h2 className="logo">José Alvarez</h2>
           </a>
           <nav
             className={`${
@@ -37,7 +29,7 @@ const Header = () => {
                 </a>
               </li>
               <li className="navegacion--li">
-                <a href="#">Proyectos</a>
+                <a href="#proyectos">Proyectos</a>
               </li>
               <li className="navegacion--li">
                 <a href="#">Contacto</a>
