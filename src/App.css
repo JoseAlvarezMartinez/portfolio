@@ -158,7 +158,7 @@ h1 span {
 }
 .sobre-mi-descripcion {
   text-align: center;
-  margin: 1rem 0.5rem;
+  margin: 1rem 1.5rem;
   margin-top: 1.5rem;
 }
 .mi-foto {
@@ -170,13 +170,29 @@ h1 span {
   display: flex;
   justify-content: center;
 }
+@keyframes animacionSticky {
+  0% {
+    position: sticky;
+    top: -5rem;
+  }
+  100% {
+    position: sticky;
+    top: 0;
+    background-color: #000000ce;
+  }
+}
 
 .barra-fija {
   transition: all 0.8s;
+  animation: animacionSticky 1s alternate ease-in-out;
+  animation-iteration-count: 1;
+  background-color: #000000ce;
   position: sticky;
   top: 0;
-  background-color: #000000ce;
+  z-index: 1;
+
 }
+
 @media only screen and (min-width: 600px) {
   .hamburger-react {
     display: none;
@@ -234,17 +250,13 @@ h1 span {
   .descargar-cv {
     margin-right: 1rem;
   }
-  .probando {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
+
   .avatar {
     display: inline;
     width: 19rem;
     opacity: 0.8;
   }
-  .avatar-div{
-
+  .avatar-div {
     margin: 0 auto;
   }
   .presentacion-flex {
