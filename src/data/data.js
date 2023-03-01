@@ -38,6 +38,10 @@ export const tecnologias = [
     imagen: react,
   },
   {
+    nombre: "Next.js",
+    imagen: next,
+  },
+  {
     nombre: "Git",
     imagen: git,
   },
@@ -45,9 +49,6 @@ export const tecnologias = [
     nombre: "GitHub",
     imagen: github,
   },
-  {
-    nombre: "Next.js",
-    imagen: next,
-  },
+
   
 ];

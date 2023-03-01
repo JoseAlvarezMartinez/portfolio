@@ -157,7 +157,7 @@ h1 span {
 }
 .sobre-mi-descripcion {
   text-align: center;
-  margin: 1rem 1.5rem;
+  margin: 1rem 6rem;
   margin-top: 1.5rem;
 }
 .mi-foto {
@@ -196,31 +196,33 @@ h1 span {
 .tecnologia-img {
   width: 7rem;
 }
-.tecnologia-titulo{
+.tecnologia-titulo {
   text-align: center;
-  
 }
 .slides {
   display: grid;
   grid-auto-flow: column;
   margin: 2rem;
   overflow-y: auto;
-  overflow:scroll;
+  overflow: scroll;
   scrollbar-width: none;
   overscroll-behavior-x: contain;
 }
-.slides div{
-  margin: 0 .5rem;
+.slides div {
+  margin: 0 0.5rem;
 }
-.slides img{
-  width: 8rem;
+.slides img {
+  width: 6rem;
   object-fit: contain;
 }
-.sass{
+.sass {
   min-height: 7.78rem;
 }
-.next{
+.next {
   min-height: 8rem;
+}
+.tecnologia-card {
+  width: 6rem;
 }
 @media only screen and (min-width: 600px) {
   .hamburger-react {
@@ -247,6 +249,13 @@ h1 span {
   }
   h1 span {
     font-size: 2rem;
+  }
+  .slides {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    overflow: hidden;
   }
 }
 @media only screen and (min-width: 900px) {
@@ -292,5 +301,30 @@ h1 span {
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+  .slides {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 50rem;
+    margin: 2rem auto;
+  }
+  .tecnologia-card {
+    margin: 0 2rem !important;
+  }
+  .habilidades {
+    text-align: center;
+    margin: 1.5rem 0;
+  }
+  .desktop-habilidades {
+    display: flex;
+    margin: 2rem 4rem;
+  }
+
+  .sobre-mi-descripcion {
+    margin: 2.5rem 0;
+  }
+  .sobre-mi-contenedor-desktop {
+    width: 20rem;
   }
 }

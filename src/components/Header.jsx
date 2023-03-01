@@ -19,8 +19,9 @@ const Header = () => {
       <div className="oscurecer-fondo">
         <div className={`contenedor-superior ${barraFija ? "barra-fija" : ""}`}>
           <Hamburger toggled={isOpen} color={"#fff"} toggle={setOpen} />
+          <a href="#">
           <h2 className="logo">José Alvarez</h2>
-
+          </a>
           <nav
             className={`${
               isOpen ? "navegacion-activa" : "navegacion-inactiva"
