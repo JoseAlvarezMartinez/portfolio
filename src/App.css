@@ -55,8 +55,8 @@ h1 span {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0 2rem;
-  padding-top: 1rem;
+  padding: .5rem 2rem;
+
 }
 .navegacion-inactiva {
   display: none;
@@ -76,7 +76,7 @@ h1 span {
 
   background-color: black;
   height: 100vh;
-  width: 15rem;
+  width: 14rem;
 
   display: flex;
   flex-direction: column;
@@ -97,7 +97,7 @@ h1 span {
   flex-direction: column;
   justify-content: center;
 
-  height: 80vh;
+  height: 70vh;
 }
 
 .centrar-boton {
@@ -168,15 +168,24 @@ h1 span {
   display: flex;
   justify-content: center;
 }
+
+.barra-fija{
+  transition: all .8s;
+  position: sticky;
+  top: 0;
+  background-color: #000000ce;
+}
 @media only screen and (min-width: 600px) {
   .hamburger-react {
     display: none;
   }
   .contenedor-superior {
     flex-direction: column;
+    padding-bottom: 2rem;
   }
   .navegacion-inactiva {
     display: flex;
+    padding-bottom: 1rem;
   }
   .navegacion--ul {
     position: relative;
@@ -196,6 +205,8 @@ h1 span {
 @media only screen and (min-width: 900px) {
   .contenedor-superior {
     flex-direction: row;
+    transition: background-color 1.5s;
+    padding-bottom: 1rem;
   }
   h1 {
     font-size: 1.5rem;

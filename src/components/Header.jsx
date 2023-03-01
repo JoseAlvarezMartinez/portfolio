@@ -1,13 +1,22 @@
 import { Squash as Hamburger } from "hamburger-react";
-import { CiLinkedin } from "react-icons/ci";
+import { CiLight, CiLinkedin } from "react-icons/ci";
 import { BsGithub } from "react-icons/bs";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 const Header = () => {
   const [isOpen, setOpen] = useState(false);
+  const [barraFija,setBarraFija] = useState(false)
+  useEffect(() => {
+      window.addEventListener("scroll",() => {
+        if(window.scrollY >= 80){
+          return setBarraFija(true)
+        }
+        setBarraFija(false)
+      })
+  },[barraFija])
   return (
     <header>
       <div className="oscurecer-fondo">
-        <div className="contenedor-superior">
+        <div className={`contenedor-superior ${barraFija ? "barra-fija" : ""}`}>
           <Hamburger toggled={isOpen} color={"#fff"} toggle={setOpen} />
           <h2 className="logo">José Alvarez</h2>
 
@@ -17,7 +26,7 @@ const Header = () => {
             }`}
           >
             <ul className="navegacion--ul">
-              <li className="navegacion--li">
+              <li onClick={() => setOpen(false)} className="navegacion--li">
                 <a href="#">Inicio</a>
               </li>
               <li className="navegacion--li">
