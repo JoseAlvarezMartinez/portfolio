@@ -1,18 +1,18 @@
 import { Squash as Hamburger } from "hamburger-react";
-import { CiLight, CiLinkedin } from "react-icons/ci";
+import { CiLinkedin } from "react-icons/ci";
 import { BsGithub } from "react-icons/bs";
 import { useEffect, useState } from "react";
 const Header = () => {
   const [isOpen, setOpen] = useState(false);
-  const [barraFija,setBarraFija] = useState(false)
+  const [barraFija, setBarraFija] = useState(false);
   useEffect(() => {
-      window.addEventListener("scroll",() => {
-        if(window.scrollY >= 80){
-          return setBarraFija(true)
-        }
-        setBarraFija(false)
-      })
-  },[barraFija])
+    window.addEventListener("scroll", () => {
+      if (window.scrollY >= 80) {
+        return setBarraFija(true);
+      }
+      setBarraFija(false);
+    });
+  }, [barraFija]);
   return (
     <header>
       <div className="oscurecer-fondo">
@@ -78,25 +78,24 @@ const Header = () => {
               </div>
             </div>
           </div>
-          </div>
-          <div className="centrar-boton">
-            <svg
-              className={`tienda-online-arrow ${isOpen ? "z-1" : ""}`}
-              width="14"
-              height="16"
-              viewBox="0 0 14 16"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M1.16602 8.83337L6.99935 14.6667L12.8327 8.83337M6.99935 14.6667V1.33337V14.6667Z"
-                stroke="white"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              ></path>
-            </svg>
-       
+        </div>
+        <div className="centrar-boton">
+          <svg
+            className={`tienda-online-arrow ${isOpen ? "z-1" : ""}`}
+            width="14"
+            height="16"
+            viewBox="0 0 14 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1.16602 8.83337L6.99935 14.6667L12.8327 8.83337M6.99935 14.6667V1.33337V14.6667Z"
+              stroke="white"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            ></path>
+          </svg>
         </div>
       </div>
     </header>
