@@ -157,8 +157,8 @@ h1 span {
 }
 .sobre-mi-descripcion {
   text-align: center;
-  margin: 1rem 6rem;
-  margin-top: 1.5rem;
+  margin: 2rem 6rem;
+  margin-top: 1rem;
 }
 .mi-foto {
   width: 12rem;
@@ -215,14 +215,23 @@ h1 span {
   width: 6rem;
   object-fit: contain;
 }
+.tecnologia-card:hover {
+  transform: scale(1.1);
+}
 .sass {
-  min-height: 7.78rem;
+  height: 6.5rem;
+}
+.bootstrap{
+  height: 7rem;
 }
 .next {
-  min-height: 8rem;
+  height: 6.3rem;
 }
 .tecnologia-card {
   width: 6rem;
+  
+  transition: all .5s;
+  cursor: pointer;
 }
 @media only screen and (min-width: 600px) {
   .hamburger-react {

@@ -28,7 +28,8 @@ const SobreMi = () => {
                 <img
                   className={`tecnologia-img ${
                     tecnologia.nombre == "Next.js" ? "next" : ""
-                  } ${tecnologia.nombre == "SASS" ? "sass" : ""}`}
+                  } ${tecnologia.nombre == "SASS" ? "sass" : ""}
+                  } ${tecnologia.nombre == "Bootstrap" ? "bootstrap" : ""}`}
                   src={tecnologia.imagen}
                 />
                 <p className="tecnologia-titulo">{tecnologia.nombre}</p>
