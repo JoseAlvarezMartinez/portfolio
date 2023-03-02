@@ -6,6 +6,7 @@
 header {
   background-image: url(./assets/images.jfif);
   background-size: cover;
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
@@ -380,7 +381,7 @@ h1 span {
 
 .flip-card-back {
   border-radius: 0.3rem;
-  background-color: #000000fa;
+  background-color: rgb(80, 0, 133);
   color: white;
   transform: rotateY(180deg);
 }

@@ -11,7 +11,7 @@ const Proyectos = () => {
               <div className="flip-card-front">
                 <img
                   src={proyecto.img}
-                  alt="Avatar"
+                  alt="Proyecto Imagen"
                   style={{ width: "100%", height: "100%" }}
                 />
               </div>
