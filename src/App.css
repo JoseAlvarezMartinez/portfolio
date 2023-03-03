@@ -387,7 +387,7 @@ h1 span {
 
 .flip-card-back {
   border-radius: 0.3rem;
-  background-color: rgb(80, 0, 133);
+  background-color: rgb(80 0 133 / 81%);
   color: white;
   transform: rotateY(180deg);
 }
