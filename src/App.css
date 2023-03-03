@@ -2,7 +2,7 @@
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
 }
-html{
+html {
   overflow-x: hidden;
 }
 header {
@@ -226,7 +226,7 @@ h1 span {
   display: flex;
   justify-content: center;
 }
-.avatar{
+.avatar {
   position: absolute;
   width: 12rem;
   right: -3.5rem;
@@ -356,6 +356,7 @@ h1 span {
 }
 
 .flip-card {
+  margin: .5rem 0;
   width: 20rem;
   height: 11.5rem;
   perspective: 1000px;
