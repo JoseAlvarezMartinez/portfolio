@@ -57,7 +57,7 @@ h1 span {
 .contenedor-superior {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 0.5rem 0;
   width: 100%;
 }
