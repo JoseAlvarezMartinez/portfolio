@@ -1,4 +1,5 @@
 import "./App.css";
+import Contacto from "./components/Contacto";
 import Header from "./components/Header";
 import Proyectos from "./components/Proyectos";
 import SobreMi from "./components/SobreMi";
@@ -8,6 +9,7 @@ function App() {
       <Header />
       <SobreMi />
       <Proyectos/>
+      <Contacto/>
     </>
   );
 }

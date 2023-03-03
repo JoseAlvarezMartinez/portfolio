@@ -12,7 +12,7 @@ const Proyectos = () => {
                 <img
                   src={proyecto.img}
                   alt="Proyecto Imagen"
-                  style={{ width: "100%", height: "100%" }}
+                  style={{ width: "100%", height: "90%" }}
                 />
               </div>
               <div className="flip-card-back">
