@@ -201,15 +201,13 @@ h1 span {
 .tecnologia-card:hover {
   transform: scale(1.1);
 }
+
+.bootstrap,
+.next,
 .sass {
-  height: 6.5rem;
+  height: 6rem;
 }
-.bootstrap {
-  height: 7rem;
-}
-.next {
-  height: 6.3rem;
-}
+
 .tecnologia-card {
   width: 6rem;
 
@@ -403,4 +401,11 @@ h1 span {
 }
 .centrar-btn:hover {
   transform: scale(1.05);
+}
+.linkedinLogo {
+  width: 5rem;
+}
+.mailLogo,
+.wppLogo {
+  width: 6.5rem;
 }
