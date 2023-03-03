@@ -2,7 +2,9 @@
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
 }
-
+html{
+  overflow-x: hidden;
+}
 header {
   background-image: url(./assets/images.jfif);
   background-size: cover;
@@ -140,9 +142,7 @@ h1 span {
 .z-1 {
   z-index: -1;
 }
-.avatar {
-  display: none;
-}
+
 @keyframes arrowanimation {
   0% {
     -webkit-transform: translateY(-2rem);
@@ -226,6 +226,13 @@ h1 span {
   display: flex;
   justify-content: center;
 }
+.avatar{
+  position: absolute;
+  width: 12rem;
+  right: -3.5rem;
+  transform: rotate(-30deg);
+  top: 23rem;
+}
 @media only screen and (min-width: 600px) {
   .hamburger-react {
     display: none;
@@ -299,7 +306,9 @@ h1 span {
   }
 
   .avatar {
-    display: inline;
+    display: block;
+    transform: rotate(0);
+    position: inherit;
     width: 19rem;
     opacity: 0.8;
   }
