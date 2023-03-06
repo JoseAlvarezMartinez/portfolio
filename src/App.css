@@ -431,3 +431,6 @@ h1 span {
 .mailLogo:hover,.wppLogo:hover,.linkedinLogo:hover{
   transform: scale(1.1);
 }
+#root{
+  overflow: hidden;
+}
