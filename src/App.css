@@ -414,8 +414,20 @@ h1 span {
 }
 .linkedinLogo {
   width: 5rem;
+  transition: all .5s;
 }
 .mailLogo,
 .wppLogo {
   width: 6.5rem;
+  transition: all .3s;
+}
+.contacto{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+.mailLogo:hover,.wppLogo:hover,.linkedinLogo:hover{
+  transform: scale(1.1);
 }
