@@ -13,6 +13,7 @@ import ToDoList from "../assets/to-do-project.png"
 import RestCountries from "../assets/countries-project.png"
 import AdministradorDeTurnos from "../assets/administrador-project.png"
 import Cripto from "../assets/cripto-project.png"
+import RockPaperScissors from "../assets/RockPaperScissors.png"
 export const tecnologias = [
   {
     nombre: "HTML5",
@@ -83,4 +84,9 @@ export const proyectos = [
     img:Cripto,
     link:"transcendent-tiramisu-c5fc58.netlify.app"
   },
+  {
+    nombre: "Rock - Paper - Scissors",
+    img:RockPaperScissors,
+    link:"zippy-kulfi-3b1ea4.netlify.app"
+  }
 ]
