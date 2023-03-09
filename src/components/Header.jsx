@@ -32,7 +32,7 @@ const Header = () => {
                 <a href="#proyectos">Proyectos</a>
               </li>
               <li className="navegacion--li">
-                <a href="#">Contacto</a>
+                <a href="#contacto">Contacto</a>
               </li>
             </ul>
           </nav>

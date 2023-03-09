@@ -3,7 +3,7 @@ import Mail from "../assets/mail.png";
 import WhatsApp from "../assets/wpplogo.webp";
 const Contacto = () => {
   return (
-    <footer>
+    <footer id="contacto">
       <h2 className="titulo-h2">Contacto</h2>
 
       <div className="contacto">
